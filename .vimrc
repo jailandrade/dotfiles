@@ -39,6 +39,15 @@ set expandtab
 " paste mode
 set pastetoggle=<F3>
 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+"copy (write) highlighted text to .vimbuffer
+"vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe
+"<CR><CR>
+"" paste from buffer
+map <C-v> :r ~/.vimbuffer<CR>
+
 " fish shell
 set shell=/bin/bash
 
@@ -47,26 +56,37 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-rails'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rust-lang/rust.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'lumiliet/vim-twig'
 Plugin 'elzr/vim-json'
 Plugin 'mxw/vim-jsx'
+Plugin 'stephpy/vim-yaml'
+Plugin 'stanangeloff/php.vim'
+Plugin 'isRuslan/vim-es6'
 Plugin 'othree/html5.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'shutnik/jshint2.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'fatih/vim-go'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'klen/python-mode'
+Plugin 'jmcomets/vim-pony'
+Plugin 'rgrinberg/vim-ocaml'
+Plugin 'fidian/hexmode'
 
 call vundle#end()
 filetype plugin indent on
