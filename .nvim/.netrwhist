@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/jail/projects/jailandrade/hello-vue/src'
+let g:netrw_dirhist_2='/Users/jail/projects/jailandrade/hello-vue'
+let g:netrw_dirhist_1='/Users/jail/projects/comunidad/xalapa-covid19/storemap/frontend/src'
+let g:netrw_dirhist_0='/Users/jail/projects/comunidad/xalapa-covid19/storemap/frontend'
+let g:netrw_dirhist_9='/Users/jail/projects/comunidad/xalapa-covid19/storemap'
+let g:netrw_dirhist_8='/Users/jail/projects/clasero/clasero-webapp'
+let g:netrw_dirhist_7='/Users/jail/projects/8plus/presence/presence-web-portal/src/components/MovableCard'
+let g:netrw_dirhist_6='/Users/jail/projects/8plus/presence/presence-web-portal/src/views'
+let g:netrw_dirhist_5='/Users/jail/projects/lacasitadelmarkup/lcdm-repo'
+let g:netrw_dirhist_4='/Users/jail/projects/lacasitadelmarkup/lcdm-repo/zafiro'
