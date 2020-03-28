@@ -82,9 +82,12 @@ set hidden
 
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'typescript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['javascript-typescript-stdio'],
+    \ 'typescript.tsx': ['javascript-typescript-stdio'],
     \ 'python': ['/usr/local/bin/pyls'],
-    \ 'haskell': ['hie-wrapper', '--lsp'],
+    \ 'haskell': ['hie', '--lsp'],
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
@@ -92,5 +95,14 @@ nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
+map <Leader>lg :call LanguageClient#textDocument_definition()<CR>
+map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+map <Leader>lb :call LanguageClient#textDocument_references()<CR>
+map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
+map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 
 let g:deoplete#enable_at_startup = 1
+let g:LanguageClient_diagnosticsDisplay = {1: {"name": "Error","texthl": "ALEError","signText": ">>","signTexthl": "ALEErrorSign",},2: {"name": "Warning","texthl": "ALEWarning","signText": ">>","signTexthl": "ALEWarningSign",},3: {"name": "Information","texthl": "ALEInfo","signText": ">>","signTexthl": "ALEInfoSign",},4: {"name": "Hint","texthl": "ALEInfo","signText": ">>","signTexthl": "ALEInfoSign",},}
+set signcolumn=yes
