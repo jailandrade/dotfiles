@@ -59,6 +59,9 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'WhiteBlackGoose/andromeda.nvim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'overcache/NeoSolarized'
 " javascripting
 Plug 'jparise/vim-graphql'
 Plug 'chemzqm/vim-jsx-improve'
@@ -79,7 +82,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 call plug#end()
 
-colorscheme dracula
+set background=dark
+"colorscheme dracula
+"colorscheme andromeda
+"let ayucolor="mirage" " for mirage version of theme
+"colorscheme ayu
+colorscheme NeoSolarized
 
 " This is the default extra key bindings
 let g:fzf_action = {
@@ -155,7 +163,6 @@ command! -bang -nargs=* GGrep
 
 set hidden
 set signcolumn=yes
-
 
 
 lua require('nvim-highlight-colors').setup {enable_tailwind = true}
