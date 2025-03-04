@@ -328,3 +328,34 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-eslint',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-tslint',
+  \ 'coc-tsserver',
+  \ 'coc-git',
+  \ '@yaegassy/coc-laravel',
+  \ 'coc-xml',
+  \ 'coc-svelte',
+  \ 'coc-svg',
+  \ 'coc-tailwindcss',
+  \ 'coc-snippets',
+  \ 'coc-python',
+  \ 'coc-phpactor',
+  \ 'coc-perl',
+  \ 'coc-prettier',
+  \ 'coc-prisma',
+  \ 'coc-rust-analyzer',
+  \ 'coc-lua',
+  \ 'coc-markdownlint',
+  \ 'coc-htmldjango',
+  \ 'coc-flutter',
+  \ 'coc-emmet',
+  \ 'coc-docker',
+  \ 'coc-blade',
+  \ 'coc-angular',
+  \ '@yaegassy/coc-astro',
+  \ 'coc-vetur']
