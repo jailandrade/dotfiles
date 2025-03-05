@@ -344,7 +344,6 @@ let g:coc_global_extensions = [
   \ 'coc-tailwindcss',
   \ 'coc-snippets',
   \ 'coc-python',
-  \ 'coc-phpactor',
   \ 'coc-perl',
   \ 'coc-prettier',
   \ 'coc-prisma',
@@ -358,4 +357,5 @@ let g:coc_global_extensions = [
   \ 'coc-blade',
   \ 'coc-angular',
   \ '@yaegassy/coc-astro',
+  \ 'coc-phpls',
   \ 'coc-vetur']
