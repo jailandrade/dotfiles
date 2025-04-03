@@ -37,7 +37,7 @@ set backspace=2
 set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
 
 " paste mode
-set pastetoggle=<F3>
+" set pastetoggle=<F3>
 
 set clipboard=unnamed
 
@@ -62,6 +62,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'WhiteBlackGoose/andromeda.nvim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'overcache/NeoSolarized'
+Plug 'rebelot/kanagawa.nvim'
 " javascripting
 Plug 'jparise/vim-graphql'
 Plug 'chemzqm/vim-jsx-improve'
@@ -88,7 +89,8 @@ set background=dark
 "colorscheme andromeda
 "let ayucolor="mirage" " for mirage version of theme
 "colorscheme ayu
-colorscheme NeoSolarized
+"colorscheme NeoSolarized
+colorscheme kanagawa
 
 " This is the default extra key bindings
 let g:fzf_action = {
@@ -359,3 +361,4 @@ let g:coc_global_extensions = [
   \ '@yaegassy/coc-astro',
   \ 'coc-phpls',
   \ 'coc-vetur']
+
