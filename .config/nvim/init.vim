@@ -63,6 +63,7 @@ Plug 'WhiteBlackGoose/andromeda.nvim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'overcache/NeoSolarized'
 Plug 'rebelot/kanagawa.nvim'
+Plug 'blazkowolf/gruber-darker.nvim'
 " javascripting
 Plug 'jparise/vim-graphql'
 Plug 'chemzqm/vim-jsx-improve'
@@ -90,7 +91,8 @@ set background=dark
 "let ayucolor="mirage" " for mirage version of theme
 "colorscheme ayu
 "colorscheme NeoSolarized
-colorscheme kanagawa
+"colorscheme kanagawa
+colorscheme gruber-darker
 
 " This is the default extra key bindings
 let g:fzf_action = {
