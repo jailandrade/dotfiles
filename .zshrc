@@ -116,7 +116,6 @@ alias pip="$(pyenv which pip)"
 alias vim="nvim"
 alias youtube-dl='python3 /usr/local/bin/youtube-dl'
 alias clean='cd && clear'
-alias server-clelac-production="ssh clelac@172.233.144.170"
 alias python-server="python3 -m http.server"
 alias subl='open -a "Sublime Text"'
 
