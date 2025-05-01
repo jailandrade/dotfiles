@@ -64,8 +64,9 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'overcache/NeoSolarized'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'blazkowolf/gruber-darker.nvim'
+Plug 'forest-nvim/sequoia.nvim'
 " javascripting
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'ianks/vim-tsx'
 Plug 'pangloss/vim-javascript'
@@ -92,7 +93,8 @@ set background=dark
 "colorscheme ayu
 "colorscheme NeoSolarized
 "colorscheme kanagawa
-colorscheme gruber-darker
+"colorscheme gruber-darker
+colorscheme sequoia
 
 " This is the default extra key bindings
 let g:fzf_action = {
@@ -362,5 +364,7 @@ let g:coc_global_extensions = [
   \ 'coc-angular',
   \ '@yaegassy/coc-astro',
   \ 'coc-phpls',
+  \ 'coc-go',
+  \ 'coc-rome',
   \ 'coc-vetur']
 
