@@ -65,6 +65,8 @@ Plug 'overcache/NeoSolarized'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'blazkowolf/gruber-darker.nvim'
 Plug 'forest-nvim/sequoia.nvim'
+Plug 'everviolet/nvim', { 'as': 'evergarden' }
+Plug 'sainnhe/everforest'
 " javascripting
 " Plug 'jparise/vim-graphql'
 Plug 'chemzqm/vim-jsx-improve'
@@ -94,7 +96,8 @@ set background=dark
 "colorscheme NeoSolarized
 "colorscheme kanagawa
 "colorscheme gruber-darker
-colorscheme sequoia
+colorscheme everforest
+"colorscheme sequoia
 
 " This is the default extra key bindings
 let g:fzf_action = {
